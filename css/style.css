@@ -38,17 +38,105 @@ ol{
 }
 
 p{
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.5;
     color: #28292D;
     letter-spacing: -0.01em;
 }
+
+.fill-button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 48px;
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: #fff;
+    background-color: #3040C4;
+    border-radius: 2px;
+    transition: opacity 300ms ease-in-out;
+}
+
+.fill-button:hover{
+    opacity: 0.5;
+}
+
+.fill-button.inverted{
+    color: #3040C4;
+    background-color: #fff;
+}
+
+/* Landing */
+.landing{
+    background: #FDDED8; 
+    text-align: center;
+}
+
+.landing-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh
+}
+
+.landing-title{
+    color: #2B292D;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.landing-desc{
+    margin-bottom: 20px;
+}
+
+.landing .button-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .button-group .fill-button:first-child{
+    margin-right: 8px;
+}
+
 
 /* >768px (Desktop) */
 @media screen and (min-width: 768px){
     p{
         font-size: 22px;
         line-height: 1.333336;
+    }
+
+
+    /* landing */
+    .landing-content{
+        height: auto;
+        padding: 120px;
+    }
+
+    .landing-title{
+        font-size: 70px;
+        line-height: 1.36;
+        margin-bottom: 32px;
+    }
+
+    .fill-button{
+        width: 160px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.55555;
+        margin-bottom: 32px;
+    }
+
+    .landing .button-group .fill-button:first-child{
+        margin-right: 16px;
     }
 }
 
