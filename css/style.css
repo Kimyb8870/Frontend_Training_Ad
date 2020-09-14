@@ -44,6 +44,8 @@ p{
     letter-spacing: -0.01em;
 }
 
+/* Common */
+
 .fill-button{
     display: inline-flex;
     justify-content: center;
@@ -68,6 +70,32 @@ p{
     color: #3040C4;
     background-color: #fff;
 }
+
+.section{
+    padding: 80px 0;
+}
+
+.section-category{
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+}
+
+.section-title{
+    font-size: 34px;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    color: #2B292D;
+    margin-bottom: 24px;
+}
+
+.section-desc{
+
+}
+
+
 
 /* Landing */
 .landing{
@@ -127,11 +155,46 @@ p{
     margin-bottom: 40px;
 }
 
-/* >768px (Desktop) */
+/* program */
+.program .section-category{
+    color: #009B4D;
+}
+
+
+/* 768px 이상 (Desktop) */
 @media screen and (min-width: 768px){
+    
+    /* Reset css */
+
     p{
         font-size: 22px;
         line-height: 1.333336;
+    }
+    
+    /* Common */
+
+    .fill-button{
+        width: 160px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.55555;
+        margin-bottom: 32px;
+    }
+
+    .section{
+        padding-bottom: 96px;    
+    }
+
+    .section-category{
+        font-size: 22px;
+        line-height: 1.09;
+        margin-bottom: 16px;
+    }
+
+    .section-title{
+        font-size: 56px;
+        line-height: 1;
+        margin-bottom: 32px;
     }
 
     /* landing */
@@ -146,13 +209,6 @@ p{
         margin-bottom: 32px;
     }
 
-    .fill-button{
-        width: 160px;
-        height: 56px;
-        font-size: 18px;
-        line-height: 1.55555;
-        margin-bottom: 32px;
-    }
 
     .landing .button-group .fill-button:first-child{
         margin-right: 16px;
@@ -166,6 +222,11 @@ p{
     .service-title{
         font-size: 26px;
         line-height: 1.307692307692308;
+    }
+
+    /* program */
+    .program{
+        text-align: center;
     }
 
 }
