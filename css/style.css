@@ -60,6 +60,7 @@ p {
     background-color: #3040C4;
     border-radius: 2px;
     transition: opacity 300ms ease-in-out;
+    border: none;
 }
 
 .fill-button:hover {
@@ -92,7 +93,6 @@ p {
 }
 
 .section-desc {}
-
 
 
 /* Landing */
@@ -238,6 +238,65 @@ p {
     letter-spacing: -0.01em;
 }
 
+/* subscription */
+.subscription{
+    background-color: #F2F8FA;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.subscription-image{
+    padding: 25px;
+}
+
+.subscription-image img{
+    display: block;
+    width: auto;
+    height: 190px;
+    margin: 0 auto;
+}
+
+.subscription-title{
+    color: #2B292D;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+}
+
+.subscription-desc{
+    margin-bottom: 24px;
+}
+
+.subscription .input-group{
+    margin-bottom: 8px;
+}
+
+.subscription .input-group input{
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: none;
+    margin-bottom: 8px;
+}
+
+.subscription .input-group button{
+    width: 100%;
+}
+
+.subscription-form .form-notice{
+    font-size: 13px;
+    line-height: 1.5;
+    color: #7B7b7e;
+    letter-spacing: 0;
+}
+
+.subscription-form .form-notice a{
+    text-decoration: underline;
+    color: #3040C4;
+}
 
 /* 768px 이상 (Desktop) */
 @media screen and (min-width: 768px) {
@@ -347,6 +406,50 @@ p {
         width: 100%;
         max-width: 425px;
         height: auto;
+    }
+
+    /* subscription */
+    .subscription{
+        text-align: left;
+        padding: 80px 0;
+    }
+
+    .subscription-image{
+        padding: 8px 0;
+    }
+
+    .subscription-image img{
+        height: 285px;
+        margin-left: 0;
+    }
+
+    .subscription-title{
+        font-size: 40px;
+    }
+
+    .subscription-form .input-group{
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+    }
+
+    .subscription-form .input-group input{
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.333;
+        margin-bottom: 0;
+        margin-right: 8px;
+    }
+
+    .subscription-form .input-group .fill-button{
+        width: 160px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .subscription-form .form-notice{
+        font-size: 14px;
+        line-height: 1.7;
     }
 
 }
